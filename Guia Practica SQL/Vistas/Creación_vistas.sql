@@ -1,4 +1,4 @@
--- Ejercicio 1: Crear una vista que muestre el Titulo, Tipo, Precio y Fecha de actualizaci�n
+-- Ejercicio 1: Crear una vista que muestre el Titulo, Tipo, Precio y Fecha de actualización
 -- de la tabla Titles
 USE pubs
 GO
@@ -20,7 +20,7 @@ GO
 
 SELECT * FROM titles_view
 
--- Ejercicio 2: Crear una vista que muestre el Titulo, Tipo, Precio y Fecha de actualizaci�n
+-- Ejercicio 2: Crear una vista que muestre el Titulo, Tipo, Precio y Fecha de actualización
 -- de la tabla Titles -- [RENOMBRAR & FORMATO PERU FECHA_ACTUALIZACION]
 IF EXISTS 
 (
