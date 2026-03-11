@@ -40,7 +40,7 @@ SELECT * FROM Employees
 
 -- Ejercicio 3: (USAR CONDICIONAL CASE)
 -- Confeccionar un P.A. que le enviemos un entero comprendido entre 1 y 3. 
--- debe retornar el tipo de medalla que representa dicho n�mero, sabiendo que:
+-- debe retornar el tipo de medalla que representa dicho número, sabiendo que:
 -- 1 - oro
 -- 2 - plata
 -- 3 - bronce
@@ -64,7 +64,7 @@ END;
 EXECUTE PA_MEDALLA 299
 
 -- Ejercicio 4: (USAR CONDICIONAL IF)
--- Podemos utilizar operadores l�gicos en una condici�n de un if, crear un P.A. que muestre el mayor de 3 enteros:
+-- Podemos utilizar operadores lógicos en una condición de un if, crear un P.A. que muestre el mayor de 3 enteros:
 
 DROP PROCEDURE IF EXISTS PA_MAYOR_3_ENTEROS;
 GO
