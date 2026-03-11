@@ -33,7 +33,7 @@ GO
 
 CREATE VIEW titles_view
 (
-  T�tulo, Tipo, Precio, [Fecha de actualizaci�n]
+  Título, Tipo, Precio, [Fecha de actualización]
 )
 AS
 SELECT title, type, price, CONVERT(CHAR(10),pubdate,103) as pubdate
@@ -45,7 +45,7 @@ SELECT * FROM titles_view
 -- NOTA: Al crear Vistas, el ORDER BY no funciona
 -- TRUCO: Colocar SELECT TOP 99.999999 PERCENT
 
--- Ejercicio 3: Crear una vista que muestre la categor�a y el promedio de precios
+-- Ejercicio 3: Crear una vista que muestre la categoría y el promedio de precios
 -- de la tabla Titles
 USE pubs
 GO
@@ -68,8 +68,8 @@ GO
 
 SELECT * FROM categories
 
--- Ejercicio 4: Crear una vista que muestre un reporte del producto m�s vendido
--- por cada categor�a
+-- Ejercicio 4: Crear una vista que muestre un reporte del producto más vendido
+-- por cada categoría
 USE Northwind
 GO
 
@@ -94,7 +94,7 @@ GO
 
 SELECT * FROM v_VentasCategoriaProducto
 
--- Ejercicio 5: Crear una vista que muestre un reporte del producto m�s vendido
--- por cada categor�a
+-- Ejercicio 5: Crear una vista que muestre un reporte del producto más vendido
+-- por cada categoría
 
 
