@@ -1,6 +1,6 @@
 -- Ejercicio 1: Crear un P.A. donde llamado "pa_crear_libros" que contenga las siguientes instrucciones:
--- eliminaci�n de la tabla "libros" si existe;
--- creaci�n de la tabla "libros" con: codigo, titulo, autor, editorial, precio, cantidad;
+-- eliminación de la tabla "libros" si existe;
+-- creación de la tabla "libros" con: codigo, titulo, autor, editorial, precio, cantidad;
 -- ingreso de algunos registros.
 
 DROP PROCEDURE IF EXISTS pa_crear_libros;
@@ -18,7 +18,7 @@ BEGIN
 	   cantidad smallint,
 	   primary key(codigo)
 	  )
-	INSERT INTO libros VALUES('Cien a�os de soledad','Gabriel Garcia Marquez','Sudamericana',25.90,15);
+	INSERT INTO libros VALUES('Cien años de soledad','Gabriel Garcia Marquez','Sudamericana',25.90,15);
 	INSERT INTO libros VALUES('Don Quijote de la Mancha','Miguel de Cervantes','Espasa',30.50,10);
 	INSERT INTO libros VALUES('1984','George Orwell','Secker & Warburg',18.75,20);
 	INSERT INTO libros VALUES('Orgullo y prejuicio','Jane Austen','T. Egerton',22.40,12);
@@ -47,7 +47,7 @@ END;
 EXEC pa_libros_limite_stock;
 
 -- Probar 1: Si ejecutamos el P.A. del sistema "sp_help" junto al nombre del procedimiento (exec sp_help pa_libros_limite_stock;)
--- Probar 2: Si modificamos alg�n registro de la tabla y volvemos a ejecutar el P.A. (update libros set cantidad=13 where codigo=10;)
+-- Probar 2: Si modificamos algún registro de la tabla y volvemos a ejecutar el P.A. (update libros set cantidad=13 where codigo=10;)
 
 -- Ejercicio 3: Crear un P.A. donde llamado "pa_libros_autor" que reciba el nombre de un autor y muestre todos los libros del autor solicitado
 DROP PROCEDURE IF EXISTS pa_libros_autor;
@@ -102,7 +102,7 @@ EXEC pa_autor_promedio 'Jane Austen', @resultado OUTPUT;
 
 SELECT @resultado AS Promedio;
 
--- Ejercicio 6: Crear un P.A. donde llamado "pa_promedio" al cual le enviamos 2 n�meros decimales y retorna el promedio
+-- Ejercicio 6: Crear un P.A. donde llamado "pa_promedio" al cual le enviamos 2 números decimales y retorna el promedio
 
 DROP PROCEDURE IF EXISTS pa_promedio;
 GO
